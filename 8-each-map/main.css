@@ -1,0 +1,38 @@
+.theme-red {
+  background-color: red;
+}
+
+.theme-green {
+  background-color: green;
+}
+
+.theme-blue {
+  background-color: blue;
+}
+
+.social-facebook {
+  background-color: blue;
+}
+
+.social-twitter {
+  background-color: red;
+}
+
+.social-instagram {
+  background-color: black;
+}
+
+.one {
+  width: 20px;
+  background-color: red;
+}
+
+.two {
+  width: 30px;
+  background-color: green;
+}
+
+.three {
+  width: 40px;
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */

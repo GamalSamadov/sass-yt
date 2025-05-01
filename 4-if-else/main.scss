@@ -1,0 +1,26 @@
+// @import './sass/layout/global-rules'; // old way
+@use './sass/layout/global-rules';
+
+$theme: 'light';
+
+.page {
+	@if $theme == 'light' {
+		background-color: white;
+		color: #444;
+	} @else {
+		background-color: #444;
+		color: white;
+	}
+}
+
+$rounded: false;
+
+%main-box {
+	background-color: white;
+	padding: 15px;
+	border: 1px solid black;
+}
+.box {
+	@extend %main-box;
+	border-radius: if($rounded, 10px, 0);
+}

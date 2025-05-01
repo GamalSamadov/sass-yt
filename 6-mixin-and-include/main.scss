@@ -1,0 +1,22 @@
+@use './helpers/mixins' as *;
+
+ul.links {
+	@include list-reset;
+}
+.circle-100px {
+	@include circle(100px);
+	background-color: red;
+}
+.circle-200px {
+	@include circle(200px);
+	background-color: blue;
+}
+.circle-300px {
+	@include circle(300px);
+	background-color: green;
+}
+.centered-circle {
+	@include centering;
+	@include circle(100px);
+	background-color: yellow;
+}

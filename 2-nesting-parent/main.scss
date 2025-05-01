@@ -1,0 +1,72 @@
+// @import './sass/layout/global-rules'; // old way
+@use './sass/layout/global-rules';
+
+.parent {
+	font-size: large;
+	.child {
+		.grand-child {
+			font-family: 'Courier New', Courier, monospace;
+		}
+	}
+}
+.parent-one,
+.parent-two {
+	padding: 20px;
+	.child {
+		padding: 20px;
+	}
+}
+.parent > {
+	// all the direct children
+	.child {
+		font-size: 20px;
+	}
+	.test {
+		font-size: 20px;
+	}
+}
+.parent {
+	> .child {
+		// single direct child
+		font-size: 20px;
+	}
+	+ p {
+		// next element
+		font-size: 20px;
+	}
+}
+.parent {
+	> {
+		.element-one {
+			font-size: 10px;
+		}
+		.element-two {
+			font-size: 20px;
+		}
+	}
+	.not-direct-child {
+		font-size: 20px;
+	}
+}
+.box {
+	.title {
+	}
+	&.green {
+		// .box.green
+	}
+	&.red {
+		// .box.red
+	}
+	&:hover {
+		// .box:hover
+	}
+	&:hover .title {
+		// .box:hover .title
+	}
+	:not(&) {
+		font-family: 20px;
+	}
+	[dir='rtl'] & {
+		direction: rtl;
+	}
+}

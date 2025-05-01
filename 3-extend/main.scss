@@ -1,0 +1,23 @@
+// @import './sass/layout/global-rules'; // old way
+@use './sass/layout/global-rules';
+
+.box {
+	font: {
+		size: 15px;
+		weight: 400;
+	}
+	margin: auto {
+		top: 10px;
+		bottom: 15px;
+	}
+}
+%main-box {
+	// Placeholder selector only works with @extend will not be compiled
+	background-color: white;
+	padding: 15px;
+	border: 1px solid black;
+}
+.ads {
+	@extend .main-box;
+	margin: 20px;
+}

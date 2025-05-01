@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  color: green;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer-2 {
+  background-color: red;
+}
+
+.copyright {
+  background-color: red;
+}
+
+.sidebar {
+  background-color: red;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: red;
+  }
+}/*# sourceMappingURL=main.css.map */

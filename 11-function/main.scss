@@ -1,0 +1,9 @@
+@use './helpers/functions' as *;
+
+$width: 200px;
+.element {
+	// Using the function
+	width: $width;
+	height: half(200px);
+	top: calculate(100px, 200px, 50px);
+}

@@ -1,0 +1,19 @@
+$company: 'jamal';
+
+.ad-#{$company}-#{unique-id()} {
+	color: red;
+}
+.add-#{$company}-#{unique-id()} {
+	color: blue;
+}
+
+// this comment will not be compiled
+/* this multi-line comment will be compiled but not will be compiled in compressed mode */
+/*! this multi-line comment will compiled averywhere */
+
+/* This comment contains interpolation: #{$company} */
+
+/// function to do bla bla bla
+/// @param {string} $company - company name
+/// @param {string} $name - name
+/// @param {string} $surname - surname

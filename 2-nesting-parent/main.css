@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.parent {
+  font-size: large;
+}
+.parent .child .grand-child {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.parent-one,
+.parent-two {
+  padding: 20px;
+}
+.parent-one .child,
+.parent-two .child {
+  padding: 20px;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent > .test {
+  font-size: 20px;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent + p {
+  font-size: 20px;
+}
+
+.parent > .element-one {
+  font-size: 10px;
+}
+.parent > .element-two {
+  font-size: 20px;
+}
+.parent .not-direct-child {
+  font-size: 20px;
+}
+
+:not(.box) {
+  font-family: 20px;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}/*# sourceMappingURL=main.css.map */

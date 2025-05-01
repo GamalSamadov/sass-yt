@@ -1,0 +1,16 @@
+@for $i from 1 through 5 {
+	.text-#{$i} {
+		width: 10px * $i;
+		height: 10px * $i;
+	}
+}
+
+$dimensions: 0;
+@for $i from 1 through 10 {
+	.circle-#{100 + $dimensions} {
+		width: $dimensions + 100px;
+		height: $dimensions + 100px;
+		border-radius: 50%;
+	}
+	$dimensions: $dimensions + 100;
+}

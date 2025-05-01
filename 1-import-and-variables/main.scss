@@ -1,0 +1,40 @@
+// @import './sass/layout/global-rules'; // old way
+@use './sass/layout/global-rules';
+@use './sass/pages/contact';
+// @use './sass/variables/colors' as *; // import all variables
+@use './sass/variables/colors'; // import all variables
+
+// global variable
+$alt-color: green;
+
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+.header {
+	color: $alt-color;
+}
+.footer {
+	$alt-color: black;
+	background-color: $alt-color; // black takes from local variable
+}
+.footer-2 {
+	$alt-color: red !global; // making it global
+	background-color: $alt-color; // red takes from local variable
+}
+.copyright {
+	background-color: $alt-color; // red takes from global changed variable
+}
+.sidebar {
+	background-color: colors.$main;
+	color: colors.$alt;
+}
+
+$max-mobile: 'max-width: 768px';
+
+@media ($max-mobile) {
+	.header {
+		background-color: $alt-color;
+	}
+}

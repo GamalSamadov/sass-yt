@@ -1,0 +1,14 @@
+@use './helpers/mixins' as *;
+
+.black-overlay {
+	@include overlay(black, 0.5);
+}
+
+@include keyF(fade-in) {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

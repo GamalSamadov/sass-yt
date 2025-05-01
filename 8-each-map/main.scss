@@ -1,0 +1,28 @@
+$themes: red, green, blue;
+
+@each $theme in $themes {
+	.theme-#{$theme} {
+		background-color: $theme;
+	}
+}
+
+$socials: (
+	'facebook': blue,
+	'twitter': red,
+	'instagram': black,
+);
+@each $social, $color in $socials {
+	.social-#{$social} {
+		background-color: $color;
+	}
+}
+
+// Destructuring
+$classes: 'one' 20px red, 'two' 30px green, 'three' 40px blue;
+
+@each $class, $size, $color in $classes {
+	.#{$class} {
+		width: $size;
+		background-color: $color;
+	}
+}

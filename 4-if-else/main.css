@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.page {
+  background-color: white;
+  color: #444;
+}
+
+.box {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.box {
+  border-radius: 0;
+}/*# sourceMappingURL=main.css.map */

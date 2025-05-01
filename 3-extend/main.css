@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.box {
+  font-size: 15px;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.main-box, .ads {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.ads {
+  margin: 20px;
+}/*# sourceMappingURL=main.css.map */
